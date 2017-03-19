@@ -9,11 +9,26 @@
     <version>1.0-SNAPSHOT</version>
     <name>Github automati</name>
     <description>making a new POM model project using mvn</description>
+    
+    <properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+    
     <dependencies>
      <dependency>
         <groupId>org.seleniumhq.selenium</groupId>
         <artifactId>selenium-java</artifactId>
         <version>3.0.0</version>
-     </dependency>  
-    </dependencies>
+     </dependency>
+     <dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+	</dependency>
+	</dependencies>
+
 </project>
+
+
+

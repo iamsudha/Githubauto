@@ -10,13 +10,15 @@ public class GithubLoginPage {
     webdriver = driver;
   }
 
- public void logIn(String uname,String pwd){
+ public GithubuserHomePage logIn(String uname,String pwd){
    WebElement userName = webdriver.findElement(By.id("login_field"));
    userName.sendKeys(uname);
    WebElement password = webdriver.findElement(By.id("password"));
    password.sendKeys(pwd);
    WebElement linkElement1 = webdriver.findElement(By.className("btn"));
    linkElement1.click();
+   GithubuserHomePage userhomepage = new GithubuserHomePage(webdriver);
+   return userhomepage;
       }
 
 }
